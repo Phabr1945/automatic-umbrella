@@ -1,3 +1,4 @@
+:
 Lbl M
 ClrHome
 Menu("--UNITS--","UNIT 1",A,"UNIT 2",B,"EXIT",X)
@@ -49,12 +50,38 @@ Output(4,1,"X=TIME")
 Output(5,1,"+ FOR EXP GROWTH")
 Output(6,1,"-FOR EXP DECAY")
 Pause 
+ClrHome
+Menu("MORE","SOLVE WITH LOG",N,"log,ln,e",O)
 Goto M
 Lbl G
 ClrHome
 Output(1,1,"LINEAR: Y=2X")
 Output(2,1,"QUADRATIC: Y=X^2")
 Output(3,1,"EXPONENT: Y=2^X")
+Pause 
+Goto M
+Lbl N
+ClrHome
+Output(1,1,"EXAMPLE:")
+Output(2,1,"407=130(1.3)^X")
+Output(3,1,"407/130=1.3^X")
+Output(4,1,"Xln1.3=ln407/130")
+Output(5,1,"X= ln(407/130)/")
+Output(6,1,"   ln(1.3)")
+Pause 
+Goto M
+Lbl O
+ClrHome
+Output(1,1,"ALL EQUEAL")
+Output(2,1,"ln(e^7)")
+Output(3,1,"e^(ln(8))")
+Output(4,1,"e^(ln(x^3))")
+Output(5,1,"e^(7ln(Y))")
+Pause 
+ClrHome
+Output(1,1,"logA(N)=X==N=a^X")
+Output(2,1,"logN=X==N=10^X")
+Output(3,1,"lnN=X==N=e^X")
 Pause 
 Goto M
 Lbl X
